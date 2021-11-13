@@ -13,7 +13,7 @@ public class LoginPage extends LibGlobal {
 	@FindBys({ @FindBy(id="email"), @FindBy(xpath="//input[@type='text']")})
 	private WebElement txtUsername;
 	@FindBys({@FindBy(id="pass"), @FindBy(xpath="//input[@type='password']")})
-	private WebElement txtPass;
+	private WebElement txtpass;
 	@FindBys({@FindBy(name="login"),@FindBy(xpath="//button[@value='1']")})
 	private WebElement loginBtn;
 	
@@ -21,7 +21,7 @@ public class LoginPage extends LibGlobal {
 		return txtUsername;
 	}
 	public WebElement getTxtPass() {
-		return txtPass;
+		return txtpass;
 	}
 	public WebElement getLoginBtn() {
 		return loginBtn;
